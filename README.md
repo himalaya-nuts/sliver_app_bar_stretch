@@ -1,16 +1,13 @@
 # sliver_app_bar_stretch
 
-A new Flutter project.
+This is a demo that shows how to temporary fix [Unable to stretch SliverAppBar issue](https://github
+.com/flutter/flutter/issues/54059), which is to allow `NestedScrollView` support `SliverAppBar.stretch` effect.
 
-## Getting Started
+Have a play at this demo web app (resize to phone screen size for best result): https://himalaya-nuts.github
+.io/sliver_app_bar_stretch
 
-This project is a starting point for a Flutter application.
+This method is a quick hack, optimal effect requires extensive refactoring of `NestedScrollView`, thus official
+Flutter team is not picking up this issue yet . Some limitations apply:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. The body scroll view must have `BouncingScrollPhysics`, when the SliverAppBar background stretches, so does the body scroll view.
+2. SliverAppBar and body scroll physics does not connect seamlessly. As a result, the SliverAppBar won't stretch by carried momentum (when you quick fling down then not touching the screen), your fingertip has to be touching the screen when stretching the SliverAppBar.
