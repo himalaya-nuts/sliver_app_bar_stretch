@@ -17198,7 +17198,7 @@ rn:function(a){var s
 if(P.a4e(a).gGf())return P.Jm(C.lE,a,C.X,!1)
 s=this.gPq()
 if(s==null)s=""
-return P.Jm(C.lE,s+("assets/"+a),C.X,!1)},
+return P.Jm(C.lE,s+("sliver_app_bar_stretch/assets/"+a),C.X,!1)},
 cv:function(a,b){return this.ZV(a,b)},
 ZV:function(a,b){var s=0,r=P.a6(t.B6),q,p=2,o,n=[],m=this,l,k,j,i,h,g,f,e
 var $async$cv=P.a2(function(c,d){if(c===1){o=d
@@ -53300,7 +53300,7 @@ Cl:function(a){var s=null,r="Tab"+a
 return new B.Ak(new G.VW(new F.ZO(a),50,!0,!0,!0),s,C.n,!1,s,!0,C.on,!1,s,0,s,50,C.b_,C.qV,s,C.ae,new S.l_(r,t.ep))}}
 F.ZP.prototype={
 $2:function(a,b){var s=null,r=H.a([C.re,C.rd],t.qt)
-return H.a([new E.tV(C.BD,new Z.qv(new U.qM(M.ait(s,s,new L.pv("assets/take_down.jpg",s,s)),C.op,s),C.oL,r,s),200,!0,!0,1,s)],t.E)},
+return H.a([new E.tV(C.BD,new Z.qv(new U.qM(M.ait(s,s,new L.pv("sliver_app_bar_stretch/assets/take_down.jpg",s,s)),C.op,s),C.oL,r,s),200,!0,!0,1,s)],t.E)},
 $C:"$2",
 $R:2,
 $S:313}
